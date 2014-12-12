@@ -7,12 +7,13 @@ var init = function() {
   body.appendChild(container)
 
   // add the rows + squares
-  var n = 20;
-  for (var i = 0; i < n; i++) {
+  var rows = 20;
+  var columns = 40;
+  for (var i = 0; i < rows; i++) {
   	var row = document.createElement('div');
   	row.className = 'row';
 
-  	for (var j = 0; j < n; j++) {
+  	for (var j = 0; j < columns; j++) {
 	  	var square = document.createElement('div');
 	  	square.className = 'square';
 	  	square.style.backgroundColor =  "hsl(" + (((i*5) + j) * 360 / 25) + ", 100%, 50%)";
