@@ -1,0 +1,37 @@
+body {
+	background-color: #545454;
+	/*padding: 2% 2% 2% 2%; */
+	overflow:hidden;
+}
+
+.container {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	transition: transform 2s;
+}
+
+.container:hover {
+	transform: rotateZ(60deg) rotateX(45deg) rotateY(-50deg) scale(2.5,2.5);
+}
+
+.row {
+	box-sizing: border-box;
+	width: 100%;
+	height:5%; /* changes with n*/
+	padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+.square {
+	box-sizing: border-box;
+	margin: 0% 0.5% 0% 0.5%;
+	width: 4%; /* changes with n */
+	height:100%;
+	float:left;
+	transition: transform 2s;
+}
+
+.square:hover {
+	transform: translateZ(100px);
+
+}
