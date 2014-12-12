@@ -12,11 +12,11 @@ var init = function() {
   for (var i = 0; i < rows; i++) {
   	var row = document.createElement('div');
   	row.className = 'row';
-
+  	console.log('on row',  i)
   	for (var j = 0; j < columns; j++) {
 	  	var square = document.createElement('div');
 	  	square.className = 'square';
-	  	square.style.backgroundColor =  "hsl(" + (((i*5) + j) * 360 / 25) + ", 100%, 50%)";
+	  	square.style.backgroundColor =  "hsl(" + ((((i*columns) + j) * 360) / 800) + ", 100%, 50%)";
 	  	row.appendChild(square);
   	}
 
